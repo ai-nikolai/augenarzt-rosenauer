@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. med. univ. Lena Rosenauer - Augenheilkunde</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 3.0rem;
+            color: #2c3e50;
+        }
+
+        .logo p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            background-color: #e3f2fd;
+            padding: 4rem 0;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .info-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .profile-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .profile-card h4 {
+            color: #2c3e50;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .profile-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-card a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .profile-card a:hover {
+            color: #2980b9;
+        }
+
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info div {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p>a{
+            color: #3498db; 
+            text-decoration: none; 
+            border-bottom: 1px solid #3498db;
+        }
+
+        .services {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .services-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">
+                <h1>Dr. med. univ. Lena Rosenauer</h1>
+                <p>Fachärztin für Augenheilkunde und Optometrie</p>
+            </div>
+            <!-- <div class="nav-links">
+                <a href="#">Übersicht</a>
+                <a href="#">Leistungen</a>
+                <a href="#">Über uns</a>
+                <a href="#">Kontakt</a>
+            </div> -->
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Willkommen in unserer Augenarztpraxis</h2>
+                <p>Ihre Augengesundheit liegt uns am Herzen. Wir bieten modernste Diagnostik und Behandlung mit persönlicher Betreuung im Zentrum von Wien.</p>
+                <!-- <a href="#" class="btn">Termin vereinbaren</a> -->
+            </div>
+            <div>
+                <img src="images/vienna_belvedere.jpg" alt="Vienne Belvedere" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+    <div class="info-card contact-info">
+        <h3>Privatklinik Döbling</h3>
+
+        <h4>Termin:</h4>
+        Nach telephonischer Vereinbarung.
+
+        <!-- <h4>Fachgebiet</h4>
+        <p>Augenheilkunde</p> -->
+
+        <!-- <h4>Spezialisierung</h4>
+        <ul>
+            <li>Glaukom (Grüner Star)</li>
+            <li>Netzhauterkrankungen</li>
+            <li>Kinderambulanz</li>
+        </ul> -->
+
+        <!-- <h4>Qualifikationen</h4>
+        <ul>
+            <li>ÖAK-Diplom: DFP-Fortbildungsdiplom</li>
+            <li>Zertifikate für Netzhaut-Laser und OCT (Optische Kohärenztomografie)</li>
+            <li>Führerschein- und Flugtauglichkeitsatteste, Atteste für Polizei, Justiz und Fluglotsen</li>
+        </ul> -->
+                <div style="margin-top: 2rem;"></div>
+
+        <h4>Addresse</h4>
+        <a href="https://maps.app.goo.gl/hpzr33kCk1LPXXMY9" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">
+        <p>Ordinationszentrum Döbling - Ebene 1<br>
+        Heiligenstädter Straße 46-48<br>
+        1190 Wien</p></a>
+                <div style="margin-top: 2rem;"></div>
+
+        <h4>Kontakt:</h4>
+        <p>Tel.: <a href="tel:+431360668000">+43 1 360 66-8000</a><br>
+        Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
+        E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
+
+        <!-- <p>Website: <a href="https://www.augenarzt-rosenauer.at" target="_blank">www.augenarzt-rosenauer.at</a></p> -->
+        <p>Profil: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Privatklinik Döbling</a></p>
+    </div>
+
+    <div class="info-card contact-info">
+
+        <h3>Privat Ordination</h3>
+
+        <h4>Termin:</h4>
+        Nach telephonischer Vereinbarung.
+                <div style="margin-top: 2rem;"></div>
+
+       <h4>Kontakt:</h4>
+        <p>Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
+        E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
+
+     
+    </div>
+    </section>
+
+
+    <!-- <div class="info-card contact-info">
+        <div>
+            <h3> Kassen Ordination in Neunkirchen </h3>
+            <h4> Kontakt: </h4>
+            <p>Telefon: <a href="tel:+43263564379" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">026 35 64 379</a></p> 
+            <br>
+            <h4>Adresse </h4>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x476dd049a1fb26c3:0xe9854b3b85727b51%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwiY8eaW5-aKAxVhIhAIHfn8D_0Q4kB6BAg8EAM&usg=AOvVaw0-qfmaBxnX9XpVd9zy9e3q" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">
+            <p>Schöllerstraße 6</p>
+            <p>2620 Neunkirchen</p>
+            </a>
+        </div>
+        <hr>
+        <br>
+        <div>
+            <h3>Privatordination in Wien</h3>
+            <h4> Kontakt: </h4>
+            <p>Nur nach telefonischer Vereinbarung:</p>
+            <p>+43 (0) 688 817 34 33</p>
+        </div>
+    </div> --->
+
+    <section class="services">
+        <div class="services-content">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Unsere Leistungen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Vorsorgeuntersuchung</h3>
+                    <p>Früherkennung von Augenerkrankungen durch regelmäßige Kontrollen</p>
+                </div>
+                <div class="service-card">
+                    <h3>Kinderordination</h3>
+                    <p>Spezialisierte Sehschule und Behandlung für unsere kleinen Patienten</p>
+                </div>
+                <div class="service-card">
+                    <h3>Kontaktlinsenanpassung</h3>
+                    <p>Individuelle Beratung und professionelle Anpassung von Kontaktlinsen</p>
+                </div>
+                <div class="service-card">
+                    <h3>Chirurgie</h3>
+                    <p>Individuelle Beratung, Versorgung und Chirurgie.</p>
+                </div>
+                <!-- <div class="service-card" style="center">
+                    <h3>Vieles mehr...</h3>
+                    <p>Rufen</p>
+                </div> -->
+            </div>
+            <br>
+            Wie bieten alle Service an, falls Sie fragen haben, bitte rufen Sie an.
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Ordination Dr. med. univ. Lena Rosenauer, Wien, Austria.</p>
+        <p style="margin-top: 0.5rem;">Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
