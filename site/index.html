@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -176,6 +176,11 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+        .services-content h2{
+            text-align: center; 
+            margin-bottom: 2rem; 
+            color: #2c3e50;
+        }
 
         .services-grid {
             display: grid;
@@ -226,6 +231,7 @@
                 <h1>Dr. med. univ. Lena Rosenauer</h1>
                 <p class="lang-de">Fachärztin für Augenheilkunde und Optometrie</p>
                 <p class="lang-ru" style="display:none;">Врач-офтальмолог</p>
+                <p class="lang-en" style="display:none;">Ophthalmologist and Optometrist</p>
             </div>
             <div class="nav-links">
                 <div class="lang-dropdown">
@@ -235,6 +241,7 @@
                     <div class="dropdown-content">
                         <a href="#" onclick="toggleLanguage('de')">🇩🇪 Deutsch</a>
                         <a href="#" onclick="toggleLanguage('ru')">🇷🇺 Русский</a>
+                        <a href="#" onclick="toggleLanguage('en')">🇬🇧 English</a>
                     </div>
                 </div>
             </div>
@@ -247,8 +254,10 @@
             <div class="hero-text">
                 <h2 class="lang-de">Willkommen in unserer Augenarztpraxis</h2>
                 <h2 class="lang-ru" style="display:none;">Добро пожаловать в нашу офтальмологическую клинику</h2>
+                <h2 class="lang-en" style="display:none;">Welcome to our Eye Clinic</h2>
                 <p class="lang-de">Ihre Augengesundheit liegt uns am Herzen. Wir bieten modernste Diagnostik und Behandlung mit persönlicher Betreuung im Zentrum von Wien.</p>
                 <p class="lang-ru" style="display:none;">Здоровье ваших глаз - наш главный приоритет. Мы предлагаем современную диагностику и лечение с индивидуальным подходом в центре Вены.</p>
+                <p class="lang-en" style="display:none;">Your eye health is our priority. We offer state-of-the-art diagnostics and treatment with personal care in the center of Vienna.</p>
             </div>
             <div>
                 <img src="images/vienna_belvedere.jpg" alt="Vienne Belvedere" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -262,13 +271,16 @@
 
         <h4 class="lang-de">Termin:</h4>
         <h4 class="lang-ru" style="display:none;">Запись на прием:</h4>
+        <h4 class="lang-en" style="display:none;">Appointment:</h4>
         <p class="lang-de">Nach telephonischer Vereinbarung.</p>
         <p class="lang-ru" style="display:none;">По предварительной записи по телефону.</p>
+        <p class="lang-en" style="display:none;">By telephone appointment.</p>
 
                 <div style="margin-top: 2rem;"></div>
 
         <h4 class="lang-de">Addresse</h4>
         <h4 class="lang-ru" style="display:none;">Адрес</h4>
+        <h4 class="lang-en" style="display:none;">Address</h4>
         <a href="https://maps.app.goo.gl/hpzr33kCk1LPXXMY9" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">
         <p>Ordinationszentrum Döbling - Ebene 1<br>
         Heiligenstädter Straße 46-48<br>
@@ -277,26 +289,31 @@
 
         <h4 class="lang-de">Kontakt:</h4>
         <h4 class="lang-ru" style="display:none;">Контакты:</h4>
+        <h4 class="lang-en" style="display:none;">Contact:</h4>
         <p>Tel.: <a href="tel:+431360668000">+43 1 360 66-8000</a><br>
         Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
         E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
 
         <p class="lang-de">Profil: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Privatklinik Döbling</a></p>
         <p class="lang-ru" style="display:none;">Профиль: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Частная клиника Döbling</a></p>
+        <p class="lang-en" style="display:none;">Profile: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Private Clinic Döbling</a></p>
     </div>
 
     <div class="info-card contact-info">
         <h3 class="lang-de">Privat Ordination</h3>
         <h3 class="lang-ru" style="display:none;">Частный прием</h3>
-
+        <h3 class="lang-en" style="display:none;">Private Practice</h3>
         <h4 class="lang-de">Termin:</h4>
         <h4 class="lang-ru" style="display:none;">Запись на прием:</h4>
+        <h4 class="lang-en" style="display:none;">Appointment:</h4>
         <p class="lang-de">Nach telephonischer Vereinbarung.</p>
         <p class="lang-ru" style="display:none;">По предварительной записи по телефону.</p>
+        <p class="lang-en" style="display:none;">By telephone appointment.</p>
                 <div style="margin-top: 2rem;"></div>
 
         <h4 class="lang-de">Kontakt:</h4>
         <h4 class="lang-ru" style="display:none;">Контакты:</h4>
+        <h4 class="lang-en" style="display:none;">Contact:</h4>
         <p>Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
         E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
     </div>
@@ -304,60 +321,89 @@
 
     <section class="services">
         <div class="services-content">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;" class="lang-de">Unsere Leistungen</h2>
-            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;" class="lang-ru" style="display:none;">Наши услуги</h2>
+            <h2 class="lang-de">Unsere Leistungen</h2>
+            <h2 class="lang-ru" style="display:none;">Наши услуги</h2>
+            <h2 class="lang-en" style="display:none;">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3 class="lang-de">Vorsorgeuntersuchung</h3>
                     <h3 class="lang-ru" style="display:none;">Профилактический осмотр</h3>
+                    <h3 class="lang-en" style="display:none;">Preventive Examination</h3>
                     <p class="lang-de">Früherkennung von Augenerkrankungen durch regelmäßige Kontrollen</p>
                     <p class="lang-ru" style="display:none;">Раннее выявление глазных заболеваний путем регулярных проверок</p>
+                    <p class="lang-en" style="display:none;">Early detection of eye diseases through regular check-ups</p>
                 </div>
                 <div class="service-card">
                     <h3 class="lang-de">Kinderordination</h3>
                     <h3 class="lang-ru" style="display:none;">Детская офтальмология</h3>
+                    <h3 class="lang-en" style="display:none;">Pediatric Eye Care</h3>
                     <p class="lang-de">Spezialisierte Sehschule und Behandlung für unsere kleinen Patienten</p>
                     <p class="lang-ru" style="display:none;">Специализированная школа зрения и лечение для наших маленьких пациентов</p>
+                    <p class="lang-en" style="display:none;">Specialized vision training and treatment for our young patients</p>
                 </div>
                 <div class="service-card">
                     <h3 class="lang-de">Kontaktlinsenanpassung</h3>
                     <h3 class="lang-ru" style="display:none;">Подбор контактных линз</h3>
+                    <h3 class="lang-en" style="display:none;">Contact Lens Fitting</h3>
                     <p class="lang-de">Individuelle Beratung und professionelle Anpassung von Kontaktlinsen</p>
                     <p class="lang-ru" style="display:none;">Индивидуальная консультация и профессиональный подбор контактных линз</p>
+                    <p class="lang-en" style="display:none;">Individual consultation and professional fitting of contact lenses</p>
                 </div>
                 <div class="service-card">
                     <h3 class="lang-de">Chirurgie</h3>
                     <h3 class="lang-ru" style="display:none;">Хирургия</h3>
+                    <h3 class="lang-en" style="display:none;">Surgery</h3>
                     <p class="lang-de">Individuelle Beratung, Versorgung und Chirurgie.</p>
                     <p class="lang-ru" style="display:none;">Индивидуальная консультация, лечение и хирургия.</p>
+                    <p class="lang-en" style="display:none;">Individual consultation, care and surgery.</p>
                 </div>
             </div>
             <br>
             <p class="lang-de">Wie bieten alle Service an, falls Sie fragen haben, bitte rufen Sie an.</p>
             <p class="lang-ru" style="display:none;">Мы предоставляем все услуги, если у вас есть вопросы, пожалуйста, позвоните нам.</p>
+            <p class="lang-en" style="display:none;">We offer all services. If you have any questions, please call us.</p>
         </div>
     </section>
 
     <footer class="footer">
         <p class="lang-de">© 2025 Ordination Dr. med. univ. Lena Rosenauer, Wien, Austria.</p>
         <p class="lang-ru" style="display:none;">© 2025 Приём Dr. med. univ. Лена Розенауэр, Вена, Австрия.</p>
+        <p class="lang-en" style="display:none;">© 2025 Practice Dr. med. univ. Lena Rosenauer, Vienna, Austria.</p>
         <p style="margin-top: 0.5rem;" class="lang-de">Alle Rechte vorbehalten.</p>
         <p style="margin-top: 0.5rem;" class="lang-ru" style="display:none;">Все права защищены.</p>
+        <p style="margin-top: 0.5rem;" class="lang-en" style="display:none;">All rights reserved.</p>
     </footer>
 
     <script>
         function toggleLanguage(lang) {
+            console.log("Switching to language");
+            console.log(lang);
+
             const deElements = document.querySelectorAll('.lang-de');
             const ruElements = document.querySelectorAll('.lang-ru');
+            const enElements = document.querySelectorAll('.lang-en');
+            console.log("Success loading elements.")
 
             if (lang === 'de') {
-                deElements.forEach(el => el.style.display = 'block');
+                console.log("`de` selected.")
                 ruElements.forEach(el => el.style.display = 'none');
-            } else {
-                deElements.forEach(el => el.style.display = 'none');
-                ruElements.forEach(el => el.style.display = 'block');
+                enElements.forEach(el => el.style.display = 'none');
+                deElements.forEach(el => el.style.display = 'block');
             }
-        }
+            else if (lang === 'ru') {
+                console.log("`ru` selected.")
+
+                deElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'none');
+                ruElements.forEach(el => el.style.display = 'block');
+
+            } else {
+                console.log("`else` selected.")
+                deElements.forEach(el => el.style.display = 'none');
+                ruElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
+            }
+    }
     </script>
 
     <style>    
