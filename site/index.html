@@ -224,23 +224,31 @@
         <div class="nav-content">
             <div class="logo">
                 <h1>Dr. med. univ. Lena Rosenauer</h1>
-                <p>Fachärztin für Augenheilkunde und Optometrie</p>
+                <p class="lang-de">Fachärztin für Augenheilkunde und Optometrie</p>
+                <p class="lang-ru" style="display:none;">Врач-офтальмолог</p>
             </div>
-            <!-- <div class="nav-links">
-                <a href="#">Übersicht</a>
-                <a href="#">Leistungen</a>
-                <a href="#">Über uns</a>
-                <a href="#">Kontakt</a>
-            </div> -->
+            <div class="nav-links">
+                <div class="lang-dropdown">
+                    <button class="lang-btn">
+                        <span class="lang-icon">🌐</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="toggleLanguage('de')">🇩🇪 Deutsch</a>
+                        <a href="#" onclick="toggleLanguage('ru')">🇷🇺 Русский</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h2>Willkommen in unserer Augenarztpraxis</h2>
-                <p>Ihre Augengesundheit liegt uns am Herzen. Wir bieten modernste Diagnostik und Behandlung mit persönlicher Betreuung im Zentrum von Wien.</p>
-                <!-- <a href="#" class="btn">Termin vereinbaren</a> -->
+                <h2 class="lang-de">Willkommen in unserer Augenarztpraxis</h2>
+                <h2 class="lang-ru" style="display:none;">Добро пожаловать в нашу офтальмологическую клинику</h2>
+                <p class="lang-de">Ihre Augengesundheit liegt uns am Herzen. Wir bieten modernste Diagnostik und Behandlung mit persönlicher Betreuung im Zentrum von Wien.</p>
+                <p class="lang-ru" style="display:none;">Здоровье ваших глаз - наш главный приоритет. Мы предлагаем современную диагностику и лечение с индивидуальным подходом в центре Вены.</p>
             </div>
             <div>
                 <img src="images/vienna_belvedere.jpg" alt="Vienne Belvedere" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -252,116 +260,166 @@
     <div class="info-card contact-info">
         <h3>Privatklinik Döbling</h3>
 
-        <h4>Termin:</h4>
-        Nach telephonischer Vereinbarung.
+        <h4 class="lang-de">Termin:</h4>
+        <h4 class="lang-ru" style="display:none;">Запись на прием:</h4>
+        <p class="lang-de">Nach telephonischer Vereinbarung.</p>
+        <p class="lang-ru" style="display:none;">По предварительной записи по телефону.</p>
 
-        <!-- <h4>Fachgebiet</h4>
-        <p>Augenheilkunde</p> -->
-
-        <!-- <h4>Spezialisierung</h4>
-        <ul>
-            <li>Glaukom (Grüner Star)</li>
-            <li>Netzhauterkrankungen</li>
-            <li>Kinderambulanz</li>
-        </ul> -->
-
-        <!-- <h4>Qualifikationen</h4>
-        <ul>
-            <li>ÖAK-Diplom: DFP-Fortbildungsdiplom</li>
-            <li>Zertifikate für Netzhaut-Laser und OCT (Optische Kohärenztomografie)</li>
-            <li>Führerschein- und Flugtauglichkeitsatteste, Atteste für Polizei, Justiz und Fluglotsen</li>
-        </ul> -->
                 <div style="margin-top: 2rem;"></div>
 
-        <h4>Addresse</h4>
+        <h4 class="lang-de">Addresse</h4>
+        <h4 class="lang-ru" style="display:none;">Адрес</h4>
         <a href="https://maps.app.goo.gl/hpzr33kCk1LPXXMY9" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">
         <p>Ordinationszentrum Döbling - Ebene 1<br>
         Heiligenstädter Straße 46-48<br>
         1190 Wien</p></a>
                 <div style="margin-top: 2rem;"></div>
 
-        <h4>Kontakt:</h4>
+        <h4 class="lang-de">Kontakt:</h4>
+        <h4 class="lang-ru" style="display:none;">Контакты:</h4>
         <p>Tel.: <a href="tel:+431360668000">+43 1 360 66-8000</a><br>
         Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
         E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
 
-        <!-- <p>Website: <a href="https://www.augenarzt-rosenauer.at" target="_blank">www.augenarzt-rosenauer.at</a></p> -->
-        <p>Profil: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Privatklinik Döbling</a></p>
+        <p class="lang-de">Profil: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Privatklinik Döbling</a></p>
+        <p class="lang-ru" style="display:none;">Профиль: <a href="https://www.privatklinik-doebling.at/de/arzt/lena-rosenauer" target="_blank">Частная клиника Döbling</a></p>
     </div>
 
     <div class="info-card contact-info">
+        <h3 class="lang-de">Privat Ordination</h3>
+        <h3 class="lang-ru" style="display:none;">Частный прием</h3>
 
-        <h3>Privat Ordination</h3>
-
-        <h4>Termin:</h4>
-        Nach telephonischer Vereinbarung.
+        <h4 class="lang-de">Termin:</h4>
+        <h4 class="lang-ru" style="display:none;">Запись на прием:</h4>
+        <p class="lang-de">Nach telephonischer Vereinbarung.</p>
+        <p class="lang-ru" style="display:none;">По предварительной записи по телефону.</p>
                 <div style="margin-top: 2rem;"></div>
 
-       <h4>Kontakt:</h4>
+        <h4 class="lang-de">Kontakt:</h4>
+        <h4 class="lang-ru" style="display:none;">Контакты:</h4>
         <p>Mobil: <a href="tel:+43688817343">+43 688 817 34 33</a><br>
         E-Mail: <a href="mailto:ordination@augenarzt-rosenauer.at">ordination@augenarzt-rosenauer.at</a></p>
-
-     
     </div>
     </section>
 
-
-    <!-- <div class="info-card contact-info">
-        <div>
-            <h3> Kassen Ordination in Neunkirchen </h3>
-            <h4> Kontakt: </h4>
-            <p>Telefon: <a href="tel:+43263564379" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">026 35 64 379</a></p> 
-            <br>
-            <h4>Adresse </h4>
-            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x476dd049a1fb26c3:0xe9854b3b85727b51%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwiY8eaW5-aKAxVhIhAIHfn8D_0Q4kB6BAg8EAM&usg=AOvVaw0-qfmaBxnX9XpVd9zy9e3q" style="color: #3498db; text-decoration: none; border-bottom: 1px solid #3498db;">
-            <p>Schöllerstraße 6</p>
-            <p>2620 Neunkirchen</p>
-            </a>
-        </div>
-        <hr>
-        <br>
-        <div>
-            <h3>Privatordination in Wien</h3>
-            <h4> Kontakt: </h4>
-            <p>Nur nach telefonischer Vereinbarung:</p>
-            <p>+43 (0) 688 817 34 33</p>
-        </div>
-    </div> --->
-
     <section class="services">
         <div class="services-content">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Unsere Leistungen</h2>
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;" class="lang-de">Unsere Leistungen</h2>
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;" class="lang-ru" style="display:none;">Наши услуги</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Vorsorgeuntersuchung</h3>
-                    <p>Früherkennung von Augenerkrankungen durch regelmäßige Kontrollen</p>
+                    <h3 class="lang-de">Vorsorgeuntersuchung</h3>
+                    <h3 class="lang-ru" style="display:none;">Профилактический осмотр</h3>
+                    <p class="lang-de">Früherkennung von Augenerkrankungen durch regelmäßige Kontrollen</p>
+                    <p class="lang-ru" style="display:none;">Раннее выявление глазных заболеваний путем регулярных проверок</p>
                 </div>
                 <div class="service-card">
-                    <h3>Kinderordination</h3>
-                    <p>Spezialisierte Sehschule und Behandlung für unsere kleinen Patienten</p>
+                    <h3 class="lang-de">Kinderordination</h3>
+                    <h3 class="lang-ru" style="display:none;">Детская офтальмология</h3>
+                    <p class="lang-de">Spezialisierte Sehschule und Behandlung für unsere kleinen Patienten</p>
+                    <p class="lang-ru" style="display:none;">Специализированная школа зрения и лечение для наших маленьких пациентов</p>
                 </div>
                 <div class="service-card">
-                    <h3>Kontaktlinsenanpassung</h3>
-                    <p>Individuelle Beratung und professionelle Anpassung von Kontaktlinsen</p>
+                    <h3 class="lang-de">Kontaktlinsenanpassung</h3>
+                    <h3 class="lang-ru" style="display:none;">Подбор контактных линз</h3>
+                    <p class="lang-de">Individuelle Beratung und professionelle Anpassung von Kontaktlinsen</p>
+                    <p class="lang-ru" style="display:none;">Индивидуальная консультация и профессиональный подбор контактных линз</p>
                 </div>
                 <div class="service-card">
-                    <h3>Chirurgie</h3>
-                    <p>Individuelle Beratung, Versorgung und Chirurgie.</p>
+                    <h3 class="lang-de">Chirurgie</h3>
+                    <h3 class="lang-ru" style="display:none;">Хирургия</h3>
+                    <p class="lang-de">Individuelle Beratung, Versorgung und Chirurgie.</p>
+                    <p class="lang-ru" style="display:none;">Индивидуальная консультация, лечение и хирургия.</p>
                 </div>
-                <!-- <div class="service-card" style="center">
-                    <h3>Vieles mehr...</h3>
-                    <p>Rufen</p>
-                </div> -->
             </div>
             <br>
-            Wie bieten alle Service an, falls Sie fragen haben, bitte rufen Sie an.
-
+            <p class="lang-de">Wie bieten alle Service an, falls Sie fragen haben, bitte rufen Sie an.</p>
+            <p class="lang-ru" style="display:none;">Мы предоставляем все услуги, если у вас есть вопросы, пожалуйста, позвоните нам.</p>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2025 Ordination Dr. med. univ. Lena Rosenauer, Wien, Austria.</p>
-        <p style="margin-top: 0.5rem;">Alle Rechte vorbehalten.</p>
+        <p class="lang-de">© 2025 Ordination Dr. med. univ. Lena Rosenauer, Wien, Austria.</p>
+        <p class="lang-ru" style="display:none;">© 2025 Приём Dr. med. univ. Лена Розенауэр, Вена, Австрия.</p>
+        <p style="margin-top: 0.5rem;" class="lang-de">Alle Rechte vorbehalten.</p>
+        <p style="margin-top: 0.5rem;" class="lang-ru" style="display:none;">Все права защищены.</p>
     </footer>
+
+    <script>
+        function toggleLanguage(lang) {
+            const deElements = document.querySelectorAll('.lang-de');
+            const ruElements = document.querySelectorAll('.lang-ru');
+
+            if (lang === 'de') {
+                deElements.forEach(el => el.style.display = 'block');
+                ruElements.forEach(el => el.style.display = 'none');
+            } else {
+                deElements.forEach(el => el.style.display = 'none');
+                ruElements.forEach(el => el.style.display = 'block');
+            }
+        }
+    </script>
+
+    <style>    
+        /* .lang-toggle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 5px 10px;
+            border: 1px solid #3498db;
+            background: none;
+            color: #3498db;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .lang-btn:hover {
+            background: #3498db;
+            color: white;
+        } */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.lang-icon {
+    font-size: 1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #2c3e50;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
 </body>
 </html>
