@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. med. univ. Lena Rosenauer - Augenheilkunde</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
     <style>
         .copyright-2{
             margin-top: 0.5rem;
@@ -206,9 +207,30 @@
             text-align: center;
             margin-top: 4rem;
         }
+        .burger-menu {
+            display: none;
+        }
+
+        .lang-menu-icon{
+            width:30px;
+            height:30px;
+        }
 
         @media (max-width: 768px) {
+            /* .nav-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
             .nav-links {
+                display: flex;
+            } */
+            .burger-menu {
+                display: block;
+                font-size: 42px;
+            }
+            .lang-menu-icon{
                 display: none;
             }
 
@@ -239,13 +261,16 @@
             <div class="nav-links">
                 <div class="lang-dropdown">
                     <button class="lang-btn">
-                        <span class="lang-icon">🌐</span>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="toggleLanguage('de')">🇩🇪 Deutsch</a>
-                        <a href="#" onclick="toggleLanguage('ru')">🇷🇺 Русский</a>
-                        <a href="#" onclick="toggleLanguage('en')">🇬🇧 English</a>
-                    </div>
+                        <div class="lang-icon">
+                            <span class="burger-menu">☰</span>
+                            <img class="lang-menu-icon" src="images/lang.png" alt="Language Selection">
+                        </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="toggleLanguage('de')">🇩🇪 Deutsch</a>
+                                <a href="#" onclick="toggleLanguage('ru')">🇷🇺 Русский</a>
+                                <a href="#" onclick="toggleLanguage('en')">🇬🇧 English</a>
+                            </div>
                 </div>
             </div>
 
